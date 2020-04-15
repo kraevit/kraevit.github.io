@@ -1,0 +1,450 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #93a4aa;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a {
+  color: #3f7ece;
+}
+a:hover {
+  text-decoration: none;
+  color: #354457;
+}
+
+#landing {
+  background-color: #354457;
+  background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519459701/landing.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #FFF;
+  min-height: 100vh;
+  position: relative;
+}
+#landing a {
+  color: #FFF;
+}
+#landing h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  font-weight: 300;
+  line-height: 120%;
+
+  max-width: 800px;
+}
+
+#more {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.625em 0;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+#more:hover {
+  color: #3f7ece;
+}
+#more span {
+  display: block;
+}
+
+#top-bar {
+  min-height: 80px;
+  line-height: 80px;
+  padding: 0 20px;
+}
+
+#logo {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+#logo:hover {
+  color: #3f7ece;
+}
+#logo span {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-size: 3rem;
+  color: #3f7ece;
+  font-weight: 700;
+  margin-left: 2px;
+}
+
+#toggle {
+  float: right;
+  background: none;
+  border: none;
+  outline: none;
+  color: #FFF;
+  margin-top: 30px;
+
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+#toggle:hover {
+  color: #3f7ece;
+  cursor: pointer;
+}
+
+#menu {
+  background-color: #3f7ece;
+  background-color: rgba(63, 126, 206, 0.9);
+  text-align: center;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+#menu a {
+  color: #FFF;
+  display: block;
+  padding: 15px 0;
+}
+#menu a:hover {
+  background-color: #354457;
+  text-decoration: none;
+}
+
+section {
+  text-align: center;
+}
+section h2 {
+  color: #354457;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 100px 0 60px 0;
+  margin: 0;
+}
+
+#about p {
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 140%;
+}
+
+#photo {
+  width: 110px;
+  height: 110px;
+  background-color: #3f7ece;
+  background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519458015/kraev-photo.png");
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+#skills {
+  margin: 0 auto;
+  padding: 0 40px;
+}
+#skills .skill {
+  margin: 30px 0;
+}
+#skills h4 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+#skills .skill-bar {
+  min-height: 6px;
+  background-color: #93a4aa;
+}
+#skills .skill-bar span {
+  height: 6px;
+  display: block;
+  background-color: #3f7ece;
+}
+
+#communication {
+  width: 80%;
+}
+
+#planning {
+  width: 80%;
+}
+
+#programming {
+  width: 90%;
+}
+
+#learning {
+  width: 95%;
+}
+
+#organization {
+  width: 90%;
+}
+
+#design {
+  width: 80%;
+}
+
+.proj-item {
+  width: 80%;
+  height: 250px;
+  background-color: #3f7ece;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+}
+.proj-item:hover a {
+  display: block;
+}
+.proj-item a {
+  color: #FFF;
+  background-color: #354457;
+  background-color: rgba(53, 68, 87, 0.9);
+  display: block;
+  height: 100%;
+  display: none;
+}
+.proj-item a span {
+  display: inline-block;
+  padding-top: 100px;
+}
+.proj-item a i {
+  display: block;
+  margin-top: 5px;
+}
+
+#paradise {
+  background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519459778/paradise.jpg");
+}
+
+#vqra {
+  background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519459778/vqra.jpg");
+}
+
+#vishka {
+  background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519459778/vishka.jpg");
+}
+
+#landscaping {
+  background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519459779/landscaping.jpg");
+}
+
+#cutefriends {
+  background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519459778/cutefriends.jpg");
+}
+
+#kabakum {
+  background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519459777/kabakum.png");
+}
+
+#rqzane {
+  background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519459779/rqzane.jpg");
+}
+
+.testimonial-item {
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+.testimonial-item h4 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.testimonial-item p {
+  line-height: 140%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.testimonial-item a {
+  font-size: 12px;
+  font-size: 1.2rem;
+  display: block;
+}
+.testimonial-item a:hover {
+  cursor: pointer;
+}
+
+.mail {
+  font-size: 24px;
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 30px;
+}
+.mail i {
+  color: #3f7ece;
+  margin-right: 10px;
+}
+
+#contact {
+  overflow: hidden;
+}
+#contact input, #contact textarea {
+  outline: none;
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #3f7ece;
+}
+#contact input:focus, #contact textarea:focus {
+  border: 2px solid #354457;
+}
+#contact input[type="submit"] {
+  border: none;
+  background-color: #3f7ece;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  max-width: 120px;
+  float: right;
+  margin-right: 5%;
+}
+#contact input[type="submit"]:hover {
+  background-color: #354457;
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #93a4aa;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #93a4aa;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+input:-ms-input-placeholder,
+textarea:ms-input-placeholder {
+  color: #93a4aa;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #93a4aa;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+textarea {
+  resize: none;
+}
+
+footer {
+  background-color: #354457;
+  color: #FFF;
+  margin-top: 80px;
+  padding: 20px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+#copy {
+  display: inline;
+}
+
+#social {
+  float: right;
+  display: inline-block;
+}
+#social a {
+  color: #FFF;
+  margin: 0 5px;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+#social a:hover {
+  color: #3f7ece;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  #skills {
+    margin: 0 auto;
+    width: 768px;
+    text-align: left;
+  }
+  #skills .skill {
+    width: 40%;
+    float: left;
+    margin: 25px 30px;
+  }
+
+  #projects {
+    padding: 0 20px;
+  }
+
+  .proj-item {
+    width: 50%;
+    float: left;
+  }
+
+  #contact form {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #projects {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .proj-item {
+    width: 25%;
+  }
+
+  #testimonials {
+    display: inline-block;
+  }
+  #testimonials .testimonial-item {
+    margin: 30px 20px;
+    padding: 0;
+    float: left;
+  }
+}
