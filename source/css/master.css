@@ -1,3 +1,15 @@
+/*
+
+  1.0 Base Styles
+  2.0 Helper Classes
+  3.0 Landing / Navigation
+  4.0 About me
+
+*/
+
+
+
+/* 1.0 Base Styles */
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -15,6 +27,7 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
   color: #93a4aa;
+  overflow: visible;
 }
 
 .clearfix:before,
@@ -38,29 +51,34 @@ a, a:link, a:visited {
 a {
   color: #3f7ece;
 }
+
 a:hover {
   text-decoration: none;
   color: #354457;
 }
 
 
-/* Landing Area */
+/* 2.0 Helper Classes */
+.text-center {
+  text-align: center;
+}
 
-.landing {
-  background-color: #354457;
-  background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519459701/landing.jpg");
-  background-size: cover;
-  background-position: center center;
-  color: #FFF;
+.text-justify {
+  text-align: justify-all;
+}
+
+/* 3.0 Landing / Navigation */
+
+.section__landing {
   height: 100vh;
-  position: relative;
-}
-
-.landing a {
   color: #FFF;
+  background-color: #354457;
+  /*background-image: url("https://res.cloudinary.com/horrow/image/upload/v1519459701/landing.jpg");*/
+  /*background-size: cover;*/
+  /*background-position: center center;*/
 }
 
-.logo {
+.site__logo {
   display: inline-block;
   width: 162px;
   height: 45px;
@@ -69,7 +87,7 @@ a:hover {
   left: 15px;
 }
 
-.site-title {
+.site__title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,8 +95,6 @@ a:hover {
           transform: translate(-50%, -50%);
 
   width: 80%;
-  text-align: center;
-
   font-size: 32px;
   font-size: 3.2rem;
   font-weight: 300;
@@ -90,10 +106,11 @@ a:hover {
 
 .btn-more {
   position: absolute;
-  bottom: 15px;
+  bottom: 0;
   width: 100%;
-  text-align: center;
+  padding: 15px 0;
   letter-spacing: 0.1em;
+  color: #fff;
 }
 
 .btn-more:hover {
@@ -146,7 +163,8 @@ a:hover {
 
 .navbar {
   min-height: 75px;
-
+  position: fixed;
+  width: 100%;
 }
 
 .navbar__menu {
@@ -170,24 +188,24 @@ a:hover {
   text-decoration: none;
 }
 
-section h2 {
+.section > header {
+  text-align: center;
+  padding: 100px 0 60px 0;
+}
+
+.section__title {
   color: #354457;
   text-transform: uppercase;
   font-size: 24px;
   margin: 0;
 }
 
-.section {
-  text-align: center;
+.section__subtitle {
+  margin-top: 5px;
+  font-weight: 400;
 }
 
-.section > header {
-  text-align: center;
-  padding: 100px 0 60px 0;
-}
-
-
-#about p {
+.site__intro {
   padding: 20px;
   max-width: 700px;
   margin: 0 auto;
@@ -446,7 +464,7 @@ footer {
 @media only screen and (min-width: 768px) {
   #skills {
     margin: 0 auto;
-    width: 768px;
+    width: 780px;
     text-align: left;
   }
   #skills .skill {
@@ -479,6 +497,7 @@ footer {
 
   .navbar {
     background-color: rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255,255,255,.1);
   }
 
   .navbar__menu {

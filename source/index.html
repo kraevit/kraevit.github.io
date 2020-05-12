@@ -21,15 +21,11 @@
 <body>
 
 <!-- Landing Area -->
-<section class="landing" id="particles-js">
+<section class="section section__landing" id="particles-js">
   
   <!-- Site Title -->
-  <h1 class="site-title">Hello, My Name is Krasimir Kraev. I Design and Develop Professional Websites from Scratch or Using Frameworks.</h1>
-
-    <!-- Brand / Logo -->
-    <a class="logo" href="https://kraevit.github.io/">
-      <img src="../images/my-logo.png" alt="Kraev IT logo">
-    </a>
+  <!-- <h1 class="site-title">Hello, My Name is Krasimir Kraev. I Design and Develop Professional Websites from Scratch or Using Frameworks.</h1> -->
+  <h1 class="site__title text-center">Hello, my name is Krasimir Kraev. I design and develop proffesional websites from scratch or using frameworks.</h1>
 
     <!-- Hamburger Button -->
 
@@ -43,6 +39,13 @@
 
   <!-- Navbar -->
   <nav class="navbar">
+
+    <!-- Brand / Logo -->
+    <a class="site__logo" href="https://kraevit.github.io/">
+      <img src="../images/my-logo-no-border.png" alt="Kraev IT logo">
+    </a>
+    
+    <!-- Navbar Menu -->
     <ul class="navbar__menu">
       <li>
         <!-- <a class="navbar__link navbar__link-active" href="#">About me</a> -->
@@ -63,25 +66,24 @@
     </ul>
   </nav>
 
-
-  <a href="#about" class="btn-more">Find Out More
-    <span><i class="fa fa-angle-double-down"></i></span>
-  </a>
-
+  <a href="#about" class="btn-more text-center">Find Out More</a>
 </section>
 
-<!-- about me -->
-<section class="section" id="about">
+<!-- About Me -->
+<section class="section section__about" id="about">
 
   <header>
-    <h2>About me</h2>
-    <h3>My Experience</h3>
+    <h2 class="section__title">About me</h2>
+    <h3 class="section__subtitle">My Experience</h3>
   </header>
 
   <div id="photo">
     <!-- loaded from css -->
+    <!-- should be changed to img tag instead -->
   </div>
-  <p>I am 27 years old man from Bulgaria. I have great experience as a front-end developer. My passion is all about creating websites, using different technologies like HTML(5), CSS(3) and JavaScript. I am able to operate with frameworks like Bootstrap as well. Projects I have already completed so far include also: content management systems like wordpress and opencart.</p>
+
+  <p class="site__intro text-center">I have great experience as a FRONT-END Developer. My passion is all about creating successfull websites. I am able to use different technologies like HTML, CSS and Javascript, also frameworks like Bootstrap as well. Projects I have already completed so far include also content management systems like WordPress and Opencart. I also offer On-Page Search Engine Optimization ( SEO ) and Google Adwords/Ads Campaign Management.</p>
+
   <div id="skills" class="clearfix">
     <div class="skill">
       <h4>Communication</h4>
@@ -126,8 +128,8 @@
 <section class="section" id="work">
 
   <header>
-    <h2>Portfolio</h2>
-    <h3>Find out more about my latest projects !</h3>
+    <h2 class="section__title">Portfolio</h2>
+    <h3 class="section__subtitle">Find out more about my latest projects !</h3>
   </header>
   
   <div id="projects" class="clearfix">
@@ -188,8 +190,8 @@
 <section class="section" id="clients">
   
   <header>
-    <h2>Testimonials</h2>
-    <h3>Some impressions from my customers.</h3>
+    <h2 class="section__title">Testimonials</h2>
+    <h3 class="section__subtitle">Some impressions from my customers.</h3>
   </header>
 
   <div id="testimonials" class="clearfix">
@@ -215,8 +217,8 @@
 <section class="section" id="contact">
   
   <header>
-    <h2>Contact Me</h2>
-    <h3>Get in touch. Tell me more about your projects and ideas.</h3>
+    <h2 class="section__title">Contact Me</h2>
+    <h3 class="section__subtitle">Get in touch. Tell me more about your projects and ideas.</h3>
   </header>
 
   <a href="mailto:kraevit@gmail.com" class="mail"><i class="fa fa-envelope-open"></i>kraevit@gmail.com</a>
@@ -249,8 +251,8 @@
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
 
-<!-- <script src="js/particles.js"></script> -->
-<!-- <script src="js/particles-config.js"></script> -->
+<script src="js/particles.js"></script>
+<script src="js/particles-config.js"></script>
 
 </body>
 </html>
