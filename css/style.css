@@ -309,6 +309,7 @@ header.hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  flex-basis: 100%;
 }
 
 .project__link {
