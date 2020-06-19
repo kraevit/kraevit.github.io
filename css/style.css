@@ -376,6 +376,17 @@ header.hero {
  background-image: url("../img/projects/operalozafferano.jpg"); 
 }
 
+.project--zamasata {
+  background-image: url("../img/projects/zamasata.jpg"); 
+}
+
+.project--korab {
+  background-image: url("../img/projects/korab.jpg"); 
+}
+
+.project--your .project__link {
+  display: block;
+}
 
 /*7.0 Testimonials*/
 .testimonials-container {
